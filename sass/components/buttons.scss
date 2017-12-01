@@ -1,0 +1,16 @@
+button {
+  background-color: $fuschia;
+  color: white;
+  width: 50px;
+  @include border;
+  margin: 5px;
+}
+
+.btn-error {
+  background-color: $graydk;
+}
+
+button:focus {
+  border: $focus;
+  padding: 3px;
+}

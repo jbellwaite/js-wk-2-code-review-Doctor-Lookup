@@ -1,4 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Questrial|Roboto");
+* {
+  outline: none; }
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden; }
+
+body {
+  box-sizing: border-box; }
+
+h1, h2, h3 {
+  text-align: center;
+  margin: 0;
+  font-family: "Questrial", sans-serif;
+  width: 100%; }
+
 h1 {
-  color: green; }
+  color: #bc12b8; }
+
+.container {
+  margin: 30px 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.form-box {
+  margin: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 40%; }
+
+form {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: #f4f0f4;
+  width: 100%; }
+
+label {
+  text-align: center; }
+
+input {
+  width: 70%;
+  background: white;
+  border: 1px solid #f4f0f4;
+  border-radius: 3px;
+  padding: 12px;
+  margin: 8px 0;
+  transition: 1s;
+  outline: none; }
+
+input::placeholder {
+  color: #8a7e89; }
+
+input:focus {
+  border: 3px dashed #593C58; }
+
+button {
+  background-color: #bc12b8;
+  color: white;
+  width: 50px;
+  border: 1px solid #f4f0f4;
+  border-radius: 3px;
+  margin: 5px; }
+
+.btn-error {
+  background-color: #8a7e89; }
+
+button:focus {
+  border: 3px dashed #593C58;
+  padding: 3px; }
+
+.jumbotron {
+  margin: 0;
+  padding: 30px;
+  background-color: #f4f0f4; }
+
+.results-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .results-box div {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #f4f0f4;
+    border-radius: 3px;
+    margin: 2%; }
+  .results-box img {
+    margin: 10px;
+    padding: 10px;
+    align-self: center;
+    background-image: -webkit-radial-gradient(white, white, #bc12b8); }
 
 /*# sourceMappingURL=styles.css.map */

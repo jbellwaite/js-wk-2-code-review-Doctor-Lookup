@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial|Roboto');
+
+$fuschia: rgb(188, 18, 184);
+$fuschiadk: #593C58;
+$graylt: rgb(244, 240, 244);
+$graydk: rgb(138, 126, 137);
+$questrial:'Questrial', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$focus: 3px dashed $fuschiadk;
+$border-gradient: linear-gradient($graydk, $fuschia, white);
+
+@mixin border {
+  border: 1px solid $graylt;
+  border-radius: 3px;
+}
