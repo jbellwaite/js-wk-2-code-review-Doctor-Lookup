@@ -7,6 +7,8 @@ var utilities = require('gulp-util');
 var del = require('del');
 var jshint = require('gulp-jshint');
 var buildProduction = utilities.env.production;
+var sass = require('gulp-sass');
+
 var lib = require('bower-files')({
   "overrides":{
     "bootstrap" : {
@@ -112,6 +114,16 @@ gulp.task('jsBuild', ['jsBrowserify', 'jshint'], function(){
 
 gulp.task('bowerBuild', ['bower'], function(){
   browserSync.reload();
+});
+
+gulp.task('sass', function () {
+  return gulp.src('./sass/**/*.scss')
+  .pipe(sass().on('error', sass.logError))
+  .pipe(gulp.dest('./css'));
+});
+
+gulp.task('sass:watch', function () {
+  gulp.watch('./sass/**/*.scss', ['sass']);
 });
 
 gulp.task("cssBuild", function() {
