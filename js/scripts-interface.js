@@ -1,9 +1,9 @@
 import { Copy } from './../js/scripts.js';
 
 let displayData = function(results) {
-  for(let i=0; i<25; i++) {
-     $('.output2').append("<img src=" + results.data[i].images.original.url + ">");
- }
+  for(let i=0; i<10; i++) {
+     $('.output2').append("<img src=" + results.data[i].profile.image_url + ">");
+  }
 };
 
 $(document).ready(function() {

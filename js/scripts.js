@@ -7,12 +7,12 @@ export class Copy {
 
   apiConstructor(displayData) {
     let query = this.search;
-    let getDinos = $.get(`https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${query}&limit=25&offset=0&rating=G&lang=en`)
+    let getDoctor = $.get(`https://api.betterdoctor.com/2016-03-01/doctors?query=${query}&location=or-portland&sort=best-match-asc&skip=0&limit=10&user_key=${apiKey}`)
     .then(function(results) {
       displayData(results);
     })
     .fail(function() {
-      alert('Sorry, your search returned nothing. Please alter your search and try again.');
+      alert('Sorry, your search was invalid. Please alter your search and try again.');
     });
 
   }
