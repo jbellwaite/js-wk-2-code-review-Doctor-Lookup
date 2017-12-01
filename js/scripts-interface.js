@@ -2,7 +2,7 @@ import { Copy } from './../js/scripts.js';
 
 let displayData = function(results) {
   if (results.data.length === 0) {
-    $('.output').append("<p class='no-return'>The search did not return any results. Please alter your search term and try again.</p>")
+    $('.output').append("<p class='no-return'>The search did not return any results. Please alter your search term and try again.</p>");
   } else {
 
     for(let i=0; i<results.data.length; i++) {
@@ -56,6 +56,21 @@ $(document).ready(function() {
 
   $(".btn-error").click(function(event) {
     $('.output').empty();
+    $('.output').empty();
+  });
+
+  $("form#generator2").submit(function(event) {
+    let search = $("#search2").val();
+    console.log(search);
+    event.preventDefault();
+
+    let newSearch = new Copy(search);
+    let apiResults = newSearch.apiConstructor2(displayData);
+  });
+
+  $(".btn-error").click(function(event) {
+    $('.output').empty();
+    $('.output2').empty();
   });
 
 });
