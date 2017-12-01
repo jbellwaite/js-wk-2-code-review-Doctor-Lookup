@@ -8,9 +8,17 @@ let displayData = function(results) {
     for(let i=0; i<results.data.length; i++) {
 
       let website = results.data[i].practices[0].website;
+      let newPatients = results.data[i].practices[0].accepts_new_patients;
+
 
       if (website === undefined) {
-        website = "The provider has not listed a website";
+        website = "This provider has not listed a website.";
+      }
+
+      if (newPatients === false) {
+        newPatients = "This provider is not taking new patients at this time.";
+      } else {
+        newPatients = "This provider is taking new patients.";
       }
 
       $('.output').append(
@@ -23,9 +31,9 @@ let displayData = function(results) {
           + results.data[i].profile.last_name
           + "</h3><p>"
           + results.data[i].profile.bio
-          + "</p><p>This practicioner is accepting new patients at this time: "
-          + results.data[i].practices[0].accepts_new_patients
-          + ".</p><p>"
+          + "</p><p>"
+          + newPatients
+          + "</p><p>"
           + results.data[i].practices[0].visit_address.street
           + "<br>"
           + results.data[i].practices[0].visit_address.city
@@ -39,8 +47,7 @@ let displayData = function(results) {
           + website
         + "</p></div>"
       );
-
-      }
+    }
   }
 };
 
@@ -61,7 +68,6 @@ $(document).ready(function() {
 
   $("form#generator2").submit(function(event) {
     let search = $("#search2").val();
-    console.log(search);
     event.preventDefault();
 
     let newSearch = new Copy(search);
