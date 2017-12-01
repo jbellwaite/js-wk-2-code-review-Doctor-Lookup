@@ -1,7 +1,7 @@
 import { Copy } from './../js/scripts.js';
 
 let displayData = function(results) {
-  for(let i=0; i<10; i++) {
+  for(let i=0; i<results.data.length; i++) {
      $('.output2').append("<img src=" + results.data[i].profile.image_url + ">");
   }
 };
