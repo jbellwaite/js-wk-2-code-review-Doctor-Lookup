@@ -12,15 +12,15 @@ html, body {
 body {
   box-sizing: border-box; }
 
-h1, h2, h3 {
+h1, h2 {
   text-align: center;
   margin: 0;
   font-family: "Questrial", sans-serif;
   width: 100%; }
 
 h1 {
-  color: #bc12b8;
-  margin: 20px; }
+  color: #772567;
+  margin: 20px 0 5px 0; }
 
 .container {
   margin: 30px 20px;
@@ -43,15 +43,18 @@ form {
   flex-wrap: wrap;
   padding: 10px;
   background-color: #f4f0f4;
-  width: 100%; }
+  width: 100%;
+  border: 3px solid #8a7e89;
+  border-radius: 3px; }
 
 label {
-  text-align: center; }
+  text-align: center;
+  font-size: 25px; }
 
 input {
   width: 70%;
   background: white;
-  border: 1px solid #f4f0f4;
+  border: 3px solid #8a7e89;
   border-radius: 3px;
   padding: 12px;
   margin: 8px 0;
@@ -65,10 +68,10 @@ input:focus {
   border: 3px dashed #593C58; }
 
 button {
-  background-color: #bc12b8;
+  background-color: #772567;
   color: white;
   width: 50px;
-  border: 1px solid #f4f0f4;
+  border: 3px solid #8a7e89;
   border-radius: 3px;
   margin: 5px; }
 
@@ -82,7 +85,20 @@ button:focus {
 .jumbotron {
   margin: 0;
   padding: 30px;
-  background-color: #f4f0f4; }
+  background-color: #f4f0f4;
+  border-bottom: 3px solid #593C58; }
+
+.better {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .better img {
+    width: 15%;
+    height: 15%; }
+  .better p {
+    color: #8a7e89;
+    font-style: italic;
+    margin: 5px 5px 10px 0; }
 
 .results-box {
   width: 100%;
@@ -94,14 +110,15 @@ button:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #f4f0f4;
+    border: 3px solid #8a7e89;
     border-radius: 3px;
-    margin: 2%; }
+    margin: 2%;
+    background-color: #f4f0f4; }
   .results-box img {
     margin: 10px;
     padding: 10px;
     align-self: center;
-    border: 2px solid #bc12b8; }
+    border: 2px solid #772567; }
   .results-box p {
     text-align: justify;
     margin: 20px; }

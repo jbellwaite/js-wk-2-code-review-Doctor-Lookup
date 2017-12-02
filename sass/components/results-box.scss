@@ -11,6 +11,7 @@
     align-items: center;
     @include border;
     margin: 2%;
+    background-color: $graylt;
   }
 
   img{

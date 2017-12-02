@@ -15,10 +15,12 @@ form {
   padding: 10px;
   background-color: $graylt;
   width: 100%;
+  @include border;
 }
 
 label {
   text-align: center;
+  font-size: 25px;
 }
 
 input{

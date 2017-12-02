@@ -2,4 +2,21 @@
   margin: 0;
   padding: 30px;
   background-color: $graylt;
+  border-bottom: 3px solid $fuschiadk;
+}
+
+.better {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img{
+    width: 15%;
+    height: 15%;
+  }
+  p{
+    color: $graydk;
+    font-style: italic;
+    margin: 5px 5px 10px 0;
+  }
 }
