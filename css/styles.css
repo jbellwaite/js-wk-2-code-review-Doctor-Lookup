@@ -19,7 +19,8 @@ h1, h2, h3 {
   width: 100%; }
 
 h1 {
-  color: #bc12b8; }
+  color: #bc12b8;
+  margin: 20px; }
 
 .container {
   margin: 30px 20px;
@@ -100,6 +101,9 @@ button:focus {
     margin: 10px;
     padding: 10px;
     align-self: center;
-    background-image: -webkit-radial-gradient(white, white, #bc12b8); }
+    border: 2px solid #bc12b8; }
+  .results-box p {
+    text-align: justify;
+    margin: 20px; }
 
 /*# sourceMappingURL=styles.css.map */

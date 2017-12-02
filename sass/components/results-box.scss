@@ -17,6 +17,11 @@
     margin: 10px;
     padding: 10px;
     align-self: center;
-    background-image: -webkit-radial-gradient(white, white, $fuschia);
+    border: 2px solid $fuschia;
+  }
+
+  p{
+    text-align: justify;
+    margin: 20px;
   }
 }

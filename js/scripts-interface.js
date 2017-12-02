@@ -7,9 +7,10 @@ let displayData = function(results) {
 
     for(let i=0; i<results.data.length; i++) {
 
+      console.log(results);
+
       let website = results.data[i].practices[0].website;
       let newPatients = results.data[i].practices[0].accepts_new_patients;
-
 
       if (website === undefined) {
         website = "This provider has not listed a website.";
