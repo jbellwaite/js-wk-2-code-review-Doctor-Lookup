@@ -6,7 +6,7 @@
     "Jessie Waite"
   ],
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/jbellwaite/js-wk-2-code-review-Doctor-Lookup",
   "ignore": [
     "**/.*",
     "node_modules",
